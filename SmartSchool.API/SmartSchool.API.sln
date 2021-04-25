@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartSchool.API", "SmartSchool.API.csproj", "{FCBDB645-568B-4F54-B972-3ED1A0BB7F02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCBDB645-568B-4F54-B972-3ED1A0BB7F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBDB645-568B-4F54-B972-3ED1A0BB7F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBDB645-568B-4F54-B972-3ED1A0BB7F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBDB645-568B-4F54-B972-3ED1A0BB7F02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C70009B-BD5D-4BB7-B80C-DB7AEF907ABD}
+	EndGlobalSection
+EndGlobal
