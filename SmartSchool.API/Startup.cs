@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SmartSchool.Api.Data;
 using SmartSchool.API.Data;
 
 namespace SmartSchool.API
@@ -30,8 +31,14 @@ namespace SmartSchool.API
             services.AddDbContext<SmartContext>(
                 context => context.UseSqlite(Configuration.GetConnectionString("default"))
             );
-            
-            services.AddControllers();
+
+            services.AddScoped<IRepository, Repository>();
+
+            services.AddControllers()
+                    .AddNewtonsoftJson(
+                        opt => opt.SerializerSettings.ReferenceLoopHandling =
+                            Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                     );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
