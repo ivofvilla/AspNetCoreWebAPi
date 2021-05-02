@@ -11,7 +11,7 @@ namespace SmartSchool.Api.Models
         public Curso()
         {
         }
-        public Curso(int id, int Nome)
+        public Curso(int id, string nome)
         {
             this.Id = id;
             this.Nome = nome;

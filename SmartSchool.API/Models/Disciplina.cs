@@ -17,8 +17,8 @@ namespace SmartSchool.API.Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public int CargaHoraria { get; set; }
-        public int? PrerequisitoId { get; set; } = null;
-        public Disciplina Perequisito { get; set; }
+        public int? PreRequisitoId { get; set; } = null;
+        public Disciplina PreRequisito { get; set; }
         public int ProfessorId { get; set; }
         public Professor Professor { get; set; }
         public int CursoId { get; set; }

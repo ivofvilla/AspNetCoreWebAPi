@@ -7,7 +7,7 @@ namespace SmartSchool.API.Models
     {
         public Aluno() { }
 
-        public Aluno(int id, string nome, string sobrenome, string telefone,int matricula, DateTime dataNascimento)
+        public Aluno(int id, int matricula, string nome, string sobrenome, string telefone,DateTime dataNascimento)
         {
             this.Id = id;
             this.Matricula = matricula;
