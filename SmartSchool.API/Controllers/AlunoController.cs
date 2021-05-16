@@ -51,7 +51,7 @@ namespace SmartSchool.API.Controllers
             _repository.Add(aluno);
             if(_repository.SaveChanges())
             {
-                return Created($"/api/aluno/{model.Id}", _mapper.Map<IEnumerable<AlunoDto>>(aluno));
+                return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoDto>(aluno));
             }
 
             return BadRequest("Aluno não cadastrado!");
@@ -71,7 +71,7 @@ namespace SmartSchool.API.Controllers
             _repository.Update(aluno);
             if (_repository.SaveChanges())
             {
-                return Created($"/api/aluno/{model.Id}", _mapper.Map< IEnumerable<AlunoDto>> (aluno));
+                return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoDto>(aluno));
             }
 
             return BadRequest("Aluno não atualizado!");

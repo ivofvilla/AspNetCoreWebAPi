@@ -30,7 +30,7 @@ namespace SmartSchool.Api.Data
         }
         public bool SaveChanges()
         {
-            return _context.SaveChanges() > 0 ? true : false;
+            return _context.SaveChanges() > 0;
         }
 
         public Aluno[] GetAllAlunos(bool incluirProfessor = false)
@@ -67,7 +67,7 @@ namespace SmartSchool.Api.Data
             return query.ToArray();
         }
 
-        public Aluno[] GetAlunoById(int alunoId, bool incluirProfessor = false)
+        public Aluno GetAlunoById(int alunoId, bool incluirProfessor = false)
         {
             IQueryable<Aluno> query = _context.Alunos;
 
@@ -82,7 +82,7 @@ namespace SmartSchool.Api.Data
                          .OrderBy(o => o.Id)
                          .Where(w => w.Id == alunoId);
 
-            return query.ToArray();
+            return query.FirstOrDefault();
         }
 
         public Professor[] GetAllProfessores(bool incluirAlunos = false)
@@ -122,7 +122,7 @@ namespace SmartSchool.Api.Data
             return query.ToArray();
         }
 
-        public Professor[] GetAllProfessoresById(int idProfessor, bool incluirAlunos = false)
+        public Professor GetProfessorById(int idProfessor, bool incluirAlunos = false)
         {
             IQueryable<Professor> query = _context.Professores;
 
@@ -135,7 +135,7 @@ namespace SmartSchool.Api.Data
 
             query = query.AsNoTracking().Where(w => w.Id == idProfessor);
 
-            return query.ToArray();
+            return query.FirstOrDefault();
         }
     }
 }

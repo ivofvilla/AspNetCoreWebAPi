@@ -15,10 +15,10 @@ namespace SmartSchool.Api.Data
         bool SaveChanges();
         Aluno[] GetAllAlunos(bool incluirProfessor = false);
         Aluno[] GetAllAlunosByDisciplinaId(int disciplinaId, bool incluirProfessor);
-        Aluno[] GetAlunoById(int alunoId, bool incluirProfessor = false);
+        Aluno GetAlunoById(int alunoId, bool incluirProfessor = false);
         Professor[] GetAllProfessores(bool incluirAlunos = false);
         Professor[] GetAllProfessoresByDisciplina(int idDisciplina, bool incluirAlunos = false);
-        Professor[] GetAllProfessoresById(int idProfessor, bool incluirAlunos = false);
+        Professor GetProfessorById(int idProfessor, bool incluirAlunos = false);
 
 
     }
