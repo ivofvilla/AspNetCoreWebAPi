@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartSchool.Api</name>
+    </assembly>
+    <members>
+        <member name="T:SmartSchool.Api.V1.Dtos.AlunoRegistroDto">
+            <summary>
+            Dto Aluno para cadastro V1
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.Id">
+            <summary>
+            Id do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.Matricula">
+            <summary>
+            numero da matricula
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.Nome">
+            <summary>
+            nome do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.Sobrenome">
+            <summary>
+            sobrenome do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.Telefone">
+            <summary>
+            telefone do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.DataNascimento">
+            <summary>
+            Data de nascimento
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.DataInicio">
+            <summary>
+            Data de inicio
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.DataFim">
+            <summary>
+            Dat de fim 
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V1.Dtos.AlunoRegistroDto.Ativo">
+            <summary>
+            aluno esta ativo
+            </summary>
+        </member>
+        <member name="T:SmartSchool.Api.V2.Dtos.AlunoRegistroDto">
+            <summary>
+            Dto Aluno para cadastro
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.Id">
+            <summary>
+            Id do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.Matricula">
+            <summary>
+            numero da matricula
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.Nome">
+            <summary>
+            nome do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.Sobrenome">
+            <summary>
+            sobrenome do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.Telefone">
+            <summary>
+            telefone do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.DataNascimento">
+            <summary>
+            Data de nascimento
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.DataInicio">
+            <summary>
+            Data de inicio
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.DataFim">
+            <summary>
+            Dat de fim 
+            </summary>
+        </member>
+        <member name="P:SmartSchool.Api.V2.Dtos.AlunoRegistroDto.Ativo">
+            <summary>
+            aluno esta ativo
+            </summary>
+        </member>
+        <member name="T:SmartSchool.API.V1.Controllers.AlunoController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.#ctor(SmartSchool.Api.Data.IRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Get">
+            <summary>
+            Metodo responsavel para retornar todos os alunos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.GetById(System.Int32)">
+            <summary>
+            Metodo responsavel por retornar um unico aluno
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Post(SmartSchool.Api.V1.Dtos.AlunoRegistroDto)">
+            <summary>
+            metodo responsavel para salvar um aluno
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Put(System.Int32,SmartSchool.Api.V1.Dtos.AlunoRegistroDto)">
+            <summary>
+            metodo responsavel para atualizar aluno
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Patch(System.Int32,SmartSchool.Api.V1.Dtos.AlunoRegistroDto)">
+            <summary>
+            metodo responsavel para atualizar aluno
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Delete(System.Int32)">
+            <summary>
+            metodo responsavel para apagar o aluno
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartSchool.API.V2.Controllers.AlunoController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSchool.API.V2.Controllers.AlunoController.#ctor(SmartSchool.Api.Data.IRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.API.V2.Controllers.AlunoController.Get">
+            <summary>
+            Metodo responsavel para retornar todos os alunos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V2.Controllers.AlunoController.GetById(System.Int32)">
+            <summary>
+            Metodo responsavel por retornar um unico aluno
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V2.Controllers.AlunoController.Post(SmartSchool.Api.V2.Dtos.AlunoRegistroDto)">
+            <summary>
+            metodo responsavel para salvar um aluno
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V2.Controllers.AlunoController.Put(System.Int32,SmartSchool.Api.V2.Dtos.AlunoRegistroDto)">
+            <summary>
+            metodo responsavel para atualizar aluno
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V2.Controllers.AlunoController.Delete(System.Int32)">
+            <summary>
+            metodo responsavel para apagar o aluno
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
